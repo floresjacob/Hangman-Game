@@ -1,0 +1,15 @@
+.jumbotron {
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    background: url("https://ak5.picdn.net/shutterstock/videos/20479315/thumb/1.jpg")
+}
+
+canvas {
+    border: 1px dotted black;
+    padding: 0;
+    margin: auto;
+    display: block;
+    
+}
