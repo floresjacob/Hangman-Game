@@ -15,18 +15,23 @@
   crossorigin="anonymous"></script>
 
     <div class="jumbotron">
-        <h1>Welcome to the Rice Terrace Hangman</h1>
-        <p></p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        <h1 id="title">Welcome to the Rice Terrace Hangman</h1>
     </div>
     
     <div class="container">
         <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="choice">
+
+            </nav>
+        </div>
+        <div class="row">
             <div class="col-md-6">
-                <div id="word"></div>
+                <div id="word">
+
+                </div>
             </div>
             <div class="col-md-6">
-                <canvas id="a" width="200" height="200">
+                <canvas id="screen" width="200" height="200">
                     Your browser doesn't support HTML canvas!
                 </canvas>
             </div>    
