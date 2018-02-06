@@ -86,6 +86,11 @@ var ghostWord = function() {
 
 choiceBar()
 
+var playAgain = function() {
+    location.reload()
+    
+}
+
 var canvas = document.getElementById("screen")
 var context = canvas.getContext("2d")
 
@@ -151,13 +156,6 @@ var gameOver = function() {
         var head = document.getElementById("title")
         head.appendChild(gameOver) 
         over = true
-}
-
-var playAgain = function() {
-    ghostWord()
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    struct()
-    choiceBar()
 }
 
 var btnMake = function() {
