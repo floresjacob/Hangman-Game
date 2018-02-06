@@ -28,8 +28,8 @@ var select = function() {
         this.setAttribute("style", "background-color: black")
         letArray.push(this.innerHTML)
         console.log(letArray)
+        var bool = false
         for(i=0; i<word.length; i++){
-            var bool = false
             if(this.innerHTML === word[i]){
                 var hit = document.getElementById(word[i]+"_")
                 hit.innerHTML = this.innerHTML
