@@ -41,11 +41,11 @@ var select = function() {
         var bool = false
         console.log(word.length)
         for(i=0; i<word.length; i++){
+            this.onclick = null
             if(this.innerHTML === word[i]){
                 var hit = document.getElementById(i)
                 hit.innerHTML = this.innerHTML
                 bool = true
-                this.onclick = null
                 points++
                 console.log(points)
                 if(points == word.length){
@@ -60,7 +60,11 @@ var select = function() {
                 sketchMan[attempts]()
                 attempts--
                 if(attempts < 0){    
-                    gameOver()
+                    var gameOver = document.createElement("h1")
+                    gameOver.innerHTML = "Game Over"
+                    var head = document.getElementById("title")
+                    head.appendChild(gameOver)
+                    btnMake()
                 }
             }
         }
@@ -155,7 +159,6 @@ var gameOver = function() {
         gameOver.innerHTML = "Game Over"
         var head = document.getElementById("title")
         head.appendChild(gameOver) 
-        over = true
 }
 
 var btnMake = function() {
